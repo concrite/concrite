@@ -1,89 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>my homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>홍길동 이력 홈페이지</title>
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('https://source.unsplash.com/1600x900/?mountain,road') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
+      font-family: 'Noto Sans KR', sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
       text-align: center;
+      margin-bottom: 40px;
     }
-    .profile {
-      padding: 50px 20px 20px;
-    }
-    .profile img {
+    header img {
       width: 150px;
-      height: 150px;
       border-radius: 50%;
-      border: 4px solid white;
+      margin-bottom: 15px;
     }
     h1 {
+      margin: 0;
       font-size: 2.5em;
+      color: #222;
     }
-    .skills, .projects {
-      margin: 40px 0;
+    h2 {
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      color: #444;
     }
-    .section-title {
-      font-size: 1.8em;
-      margin-bottom: 20px;
+    p {
+      line-height: 1.6;
     }
-    .card-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
     }
-    .card {
-      background: white;
-      color: black;
-      padding: 15px;
-      border-radius: 10px;
-      width: 120px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    a {
+      color: #1a73e8;
+      text-decoration: none;
     }
-    .card img {
-      width: 40px;
-      height: 40px;
+    a:hover {
+      text-decoration: underline;
     }
-    .stars {
-      color: gold;
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #888;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <div class="profile">
-    <img src="https://avatars.githubusercontent.com/u/your-profile-image" alt="Profile" />
-    <h1>My name is<br />Ko Young Sun, 24years.</h1>
-  </div>
+  <header>
+    <img src="https://via.placeholder.com/150" alt="홍길동 프로필 사진" />
+    <h1>홍길동</h1>
+    <p>웹 개발자 | 프론트엔드 & 백엔드 | 문제 해결자</p>
+  </header>
 
-  <div class="skills">
-    <div class="section-title">My Skills</div>
-    <div class="card-container">
-      <div class="card">Java<br/><span class="stars">★★★★☆</span></div>
-      <div class="card">JavaScript<br/><span class="stars">★★★★★</span></div>
-      <div class="card">Python<br/><span class="stars">★★★★☆</span></div>
-      <div class="card">C Language<br/><span class="stars">★★★★★</span></div>
-      <div class="card">C++<br/><span class="stars">★★★☆☆</span></div>
-      <div class="card">Swift<br/><span class="stars">★★★☆☆</span></div>
-      <div class="card">HTML<br/><span class="stars">★★★★☆</span></div>
-      <div class="card">CSS<br/><span class="stars">★★★☆☆</span></div>
-    </div>
-  </div>
+  <section>
+    <h2>소개</h2>
+    <p>안녕하세요! 저는 5년 경력의 웹 개발자 홍길동입니다. 최신 웹 기술에 관심이 많고, 사용자 친화적인 웹사이트를 만드는 것을 목표로 하고 있습니다.</p>
+  </section>
 
-  <div class="projects">
-    <div class="section-title">Projects</div>
-    <div class="card-container">
-      <div class="card">Project 1:<br/>Busan Train (C)<br/>2024.04.19</div>
-      <div class="card">Project 2:<br/>Fashion mall Website<br/>Planned</div>
-      <div class="card">Project 3:<br/>Music Player<br/>Planned</div>
-      <div class="card">Project 4:<br/>AI Development<br/>Planned</div>
-      <div class="card">Project 5:<br/>Hotel Reservation<br/>Planned</div>
-    </div>
-  </div>
+  <section>
+    <h2>경력</h2>
+    <ul>
+      <li>ABC 회사 - 프론트엔드 개발자 (2019 - 현재)</li>
+      <li>XYZ 스타트업 - 풀스택 개발자 (2016 - 2019)</li>
+      <li>웹 에이전시 - 웹 디자이너 (2014 - 2016)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>기술 스택</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript, React</li>
+      <li>Node.js, Express, MongoDB</li>
+      <li>Git, Docker, AWS</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>연락처</h2>
+    <p>이메일: <a href="mailto:honggildong@example.com">honggildong@example.com</a></p>
+    <p>깃허브: <a href="https://github.com/honggildong" target="_blank" rel="noopener">https://github.com/honggildong</a></p>
+    <p>블로그: <a href="https://blog.example.com" target="_blank" rel="noopener">https://blog.example.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 홍길동. All rights reserved.
+  </footer>
 </body>
 </html>
