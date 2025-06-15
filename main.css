@@ -1,0 +1,8 @@
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark a {
+  color: #66aaff;
+}
