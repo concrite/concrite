@@ -2,83 +2,59 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>자기 이력 홈페이지</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>홍길동 - 프론트엔드 개발자</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button id="toggleThemeBtn" style="
-  background-color:#1a73e8; 
-  color:#fff; 
-  border:none; 
-  padding:10px 20px; 
-  border-radius:5px; 
-  cursor:pointer;
-  font-weight:bold;
-  margin-top: 20px;
-">
-  다크 모드로 변경
-</button>
   <header>
-    <h1>박성진</h1>
-    <p>웹 개발자 | 프론트엔드| 문제 해결자</p>
+    <img src="https://raw.githubusercontent.com/username/repo/main/images/myphoto.jpg" alt="홍길동 프로필 사진" />
+    <h1>홍길동</h1>
+    <p>프론트엔드 개발자 | React · JavaScript · UI/UX</p>
+    <button id="toggleThemeBtn">🌙 다크 모드</button>
   </header>
 
-  <section>
-    <h2>소개</h2>
-    <p>안녕하세요.저는 프론트앤드에 흥미를 가지고 있는 박성진입니다.</p>
-  </section>
+  <main>
+    <section>
+      <h2>소개</h2>
+      <p>사용자 경험을 최우선으로 생각하는 프론트엔드 개발자입니다. 성능, 반응성, 접근성을 고려한 UI 구현을 추구합니다.</p>
+    </section>
 
-  <section>
-    <h2>나의 스킬</h2>
-    <ul>
-      <li>C (중급)</li>
-      <li>JAVA(하급)</li>
-      <li>PYTHON(하급)</li>
-    </ul>
-  </section>
+    <section>
+      <h2>기술 스택</h2>
+      <ul>
+        <li>HTML / CSS / JavaScript (ES6+)</li>
+        <li>React, Vue</li>
+        <li>Git / GitHub</li>
+        <li>Figma, Adobe XD</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>프로젝트</h2>
-    <ul>
-      <li>고양이와 수프</li>
-      <li>나만의 버킷리스트 홈페이지(soon)</li>
-      <li>ai제작(soon)</li>
-      <li>ai응용 게임추천 프로그램(soon)</li>
-      <li>체스(soon)</li>
-    </ul>
-  </section>
+    <section>
+      <h2>프로젝트</h2>
+      <ul>
+        <li><strong>포트폴리오 웹사이트:</strong> 개인 이력과 프로젝트를 소개하는 반응형 사이트</li>
+        <li><strong>To-Do 앱:</strong> React + LocalStorage를 활용한 할 일 관리 앱</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>희망 직무</h2>
-    <ul>
-      <li>모바일 웹 개발자</li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>자격증</h2>
-    <ul>
-      <li>정보처리기능사</li>
-      <li>정보기기운용기능사</li>
-    </ul>
-  </section>
+    <section>
+      <h2>연락처</h2>
+      <p>Email: hong@example.com</p>
+      <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 홍길동. All rights reserved.
+    <p>© 2025 홍길동. All rights reserved.</p>
   </footer>
-  <script>
-  const btn = document.getElementById('toggleThemeBtn');
-  const body = document.body;
 
-  btn.addEventListener('click', () => {
-    body.classList.toggle('dark');
-    if (body.classList.contains('dark')) {
-      btn.textContent = '라이트 모드로 변경';
-    } else {
-      btn.textContent = '다크 모드로 변경';
-    }
-  });
-</script>
+  <script>
+    const btn = document.getElementById('toggleThemeBtn');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      btn.textContent = document.body.classList.contains('dark') ? '☀️ 라이트 모드' : '🌙 다크 모드';
+    });
+  </script>
 </body>
 </html>
